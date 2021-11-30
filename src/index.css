@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+:root {
+  font-size: 62.5%; }
+
+body {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: dimgray; }
+  body .ff-alata {
+    font-family: 'Alata', sans-serif; }
+  body .ff-josefin-sans {
+    font-family: 'Josefin Sans', sans-serif; }
+  body .fw-300 {
+    font-weight: 300; }
+  body .fw-400 {
+    font-weight: 400; }
+  body .fw-500 {
+    font-weight: 500; }
+  body .fw-600 {
+    font-weight: 600; }
+  body .fw-700 {
+    font-weight: 700; }
+
+.app-component {
+  max-width: 144rem;
+  position: relative;
+  margin: 0rem auto; }
+  @media only screen and (max-width: 37.5em) {
+    .app-component {
+      max-width: 35rem; } }
