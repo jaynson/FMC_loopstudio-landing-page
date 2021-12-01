@@ -1,6 +1,8 @@
 import React from 'react';
+import './gallery.css';
 import { CREATIONS_DATA } from '../utils/utility';
 import CreationCard from './CreationCard';
+
 
 const GalleryView = () => {
 

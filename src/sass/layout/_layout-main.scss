@@ -3,33 +3,179 @@
 
 // container
 .container {
+  padding: 4vh 0;
+  @include respond(1440) {
+    padding: 0;
+  }
 }
 
 // Component
 .app-component {
   max-width: $main-component-max-width-desktop;
-  position: relative;
   @include margin-centralize;
+  box-shadow: 0 1rem 2.5rem rgba($color-primary-very-dark-gray, 0.5);
 
-  @include respond(600) {
-    max-width: $main-component-max-width-mobile-600px;
+  @include respond(750) {
+    max-width: $main-component-max-width-mobile-700px;
   }
 }
 
 ///////////////////////////////////////////////////////////
 ////        HEADER
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16rem;
+  background-position: center center;
+  background-attachment: local;
+
+  &-content {
+    flex-direction: column;
+  }
+
+  @include respond(490) {
+    height: 55rem;
+  }
+}
+
+//...HEADER SECTION TOP
+.header__section--top {
+  display: flex;
+  align-items: center;
+  margin: 6.5rem 0 13rem;
+}
 
 ///////////////////////////////////////////////////////////
 ////        MAIN
+.main {
+  display: flex;
+  justify-content: center;
+
+  &-content {
+    flex-direction: column;
+  }
+}
 
 ///////////////////////////////////////////////////////////
-////        MAIN - Product
+////        MAIN - FEATURE
+.feature {
+  position: relative;
+  // display: flex;
+  margin-bottom: 18.5rem;
+  //...FEATURE DESCRIPION
+  &-description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: end;
+    height: 31.8rem;
+    width: 50%;
+    // padding: 9.5rem 0 0 9.5rem;
+    // padding-left: 6%;
+    background-color: $color-primary-white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    & > * {
+      flex-basis: 80%;
+
+      @include respond(900) {
+        flex-basis: 90%;
+      }
+      @include respond(750) {
+        flex-basis: 100%;
+      }
+    }
+
+    @include respond(750) {
+      position: relative;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+      gap: 3rem;
+    }
+  }
+
+  &__title {
+    margin-top: 8rem;
+    @include respond(750) {
+      margin-top: 8rem;
+    }
+  }
+
+  @include respond(750) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+}
+
+.feature__image {
+  width: 65%;
+  @include respond(750) {
+    width: 100%;
+  }
+}
+///////////////////////////////////////////////////////////
+////        MAIN - CREATIONS
+.creations {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  @include respond(750) {
+    justify-content: center;
+  }
+}
 
 ///////////////////////////////////////////////////////////
-////        MAIN - PROJECT SUMMARY
+////        MAIN - CREATIONS--GALLERY
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.8rem;
+  justify-content: center;
+  // gap: calc((100% - (25.6rem * 4)) / 3);
+  // justify-content: space-between;
+}
 
 ///////////////////////////////////////////////////////////
-////        MAIN - PLEDGES VIEW
+////        FOOTER
+.footer {
+  background-color: $color-primary-black;
+  display: flex;
+  justify-content: center;
+  margin-top: 18.5rem;
+
+  &-content {
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(750) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+
+  @include respond(750) {
+    margin-top: 10rem;
+  }
+}
 
 ///////////////////////////////////////////////////////////
-////        MODAL
+////        SECTION CONTENT
+.section-content {
+  display: flex;
+  max-width: 111rem;
+  width: 100%;
+
+  @include respond(1140) {
+    width: 90%;
+  }
+  // @include respond(700) {
+  //   width: 100%;
+  // }
+}

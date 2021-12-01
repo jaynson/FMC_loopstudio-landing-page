@@ -1,3 +1,9 @@
 .header{
-    background-image: url('../images/bg-pattern-intro.svg'), linear-gradient(to right, hsla(13, 100%, 72%, 0.9), hsla(353, 100%, 62%, 0.9) );
+    background-image: url('../images/desktop/image-hero.jpg');
+}
+
+@media only screen and (max-width: 46.875em){
+    .header{
+        background-image: url('../images/mobile/image-hero.jpg');
+    }
 }

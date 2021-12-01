@@ -3,7 +3,7 @@ import GalleryView from './GalleryView';
 
 const CreationsView = () => {
     return (
-        <section className='creations'>
+        <section className='creations '>
             <h2 className='creations__title section__title ff-josefin-sans'>
                 OUR CREATIONS
             </h2>

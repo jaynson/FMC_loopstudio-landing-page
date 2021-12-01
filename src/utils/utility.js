@@ -21,11 +21,11 @@ const CREATIONS_DATA = [
     },
     {
         title: 'THE GRID',
-        name: 'the-grid'
+        name: 'grid'
     },
     {
         title: 'FROM UP ABOVE VR',
-        name: 'from-up-above'
+        name: 'from-above'
     },
     {
         title: 'POCKET BOREALIS',
@@ -33,11 +33,11 @@ const CREATIONS_DATA = [
     },
     {
         title: 'THE CURIOSITY',
-        name: 'the-curiosity'
+        name: 'curiosity'
     },
     {
         title: 'MAKE IT FISHEYE',
-        name: 'make-it-fisheye'
+        name: 'fisheye'
     }
 ];
 

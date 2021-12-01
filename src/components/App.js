@@ -11,7 +11,6 @@ const App = () => {
     return (
         <div className='container' >
             <div className='app-component'>
-                App
                 <HeaderView />
                 <MainView />
                 <FooterView />

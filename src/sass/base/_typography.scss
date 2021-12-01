@@ -3,9 +3,13 @@
 }
 
 body {
-  line-height: 1.5;
+  // overflow: hidden;
+  overflow-x: hidden;
+  line-height: 1.6;
   font-size: 1.5rem;
-  color: $color-primary-very-dark-gray;
+  color: $color-primary-dark-gray;
+  // color: $color-primary-very-dark-gray;
+  font-weight: 400;
 
   .ff-alata {
     font-family: 'Alata', sans-serif;
@@ -32,26 +36,114 @@ body {
   }
 
   ////BUTTON
+  .btn {
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+  }
 
-  ////CORE SERVICES
+  ////CREATION CARD
+  .creation-card {
+    &__title {
+      color: $color-primary-white;
+      font-size: 3rem;
+      letter-spacing: 0.1rem;
+      font-weight: 300;
+      line-height: 1;
+    }
+  }
 
   ////FOOTER
+  .footer {
+    &__copyright {
+      @include respond(750) {
+        text-align: center;
+      }
+    }
+  }
 
-  ////FORM
+  ////FEATURE SUMMARY
+  .feature {
+    font-size: 0;
+    &__title {
+      letter-spacing: 0.15rem;
+    }
+    &__summary {
+      font-size: 1.5rem;
+    }
+    @include respond(750) {
+      text-align: center;
+    }
+  }
 
   ////HEADER
+  .header__title {
+    font-size: 6.2rem;
+    color: $color-primary-white;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 0.62rem;
+    @include respond(800) {
+      font-size: 5rem;
+    }
+    @include respond(490) {
+      line-height: 1.1;
+      font-size: 4rem;
+    }
+    @include respond(420) {
+      font-size: 3rem;
+    }
+    @include respond(360) {
+      line-height: 1.3;
+      font-size: 2.5rem;
+    }
+    @include respond(360) {
+      line-height: 1.4;
+      font-size: 2rem;
+    }
+  }
 
   ////MENU NAV
+  .menu {
+    &__link.nav__link {
+      font-size: 2rem;
+      font-weight: 300;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+  }
 
   ////MODAL
 
-  ////MODAL COMPLETE
+  ////NAV
+  .nav__link {
+    color: $color-primary-white;
+    text-decoration: none;
+  }
 
   ////PLEDGES
 
   ////PLEDGE BOX
 
-  ////PLEDGE BOX
+  ////SECTION TITLE
+  .section__title {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 1.1;
+    color: $color-primary-black;
+
+    @include respond(990) {
+      font-size: 3rem;
+    }
+    @include respond(750) {
+      font-size: 4rem;
+    }
+    @include respond(400) {
+      font-size: 3rem;
+    }
+    @include respond(330) {
+      font-size: 2.5rem;
+    }
+  }
 
   ////PRODUCT
 

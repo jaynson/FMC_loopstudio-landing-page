@@ -5,8 +5,10 @@ import FeatureView from './FeatureView';
 const MainView = () => {
     return (
         <div className='main'>
-            <FeatureView />
-            <CreationsView />
+            <div className="main-content section-content">
+                <FeatureView />
+                <CreationsView />
+            </div>
         </div>
     );
 };
